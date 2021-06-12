@@ -1,0 +1,107 @@
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+div {
+  border: 1px solid black;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#menuButton {
+  height: 50px;
+  width: 50px;
+}
+
+#menuTitle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#whoIsFront {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.headerButton {
+  width: 60px;
+}
+
+#switchButton {
+  height: 50px;
+}
+
+#newAlterButtons {
+  display: none;
+}
+
+#saveButton {
+  height: 30px;
+}
+
+#cancelButton {
+  height: 20px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 10;
+}
+
+#chatView {
+  flex-grow: 10;
+  width: 100%;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: space-between;
+  align-items: left;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 89vh;
+}
+
+#newMsgText {
+  width: 100%;
+  /* position: absolute; */
+  bottom: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#newMsgField {
+  flex-grow: 1;
+}
+
+/* .post {
+
+} */
+
+.postTitle {
+  padding: 0;
+  margin: 0;
+}
+
+.postText {
+  padding: 0;
+  margin: 0;
+}
