@@ -60,13 +60,14 @@ class Chat {
     if (this.allPosts == undefined) {
       this.allUsers = await this.getUsers()
       let unshuffled = await this.getPosts()
-      this.allPosts = this.shuffle(unshuffled)
+      this.allPosts = this.shuffle(unshuffled) // REMOVE AFTER CONNECTED TO ACTUAL DB
       this.displayPosts(30)
     } else {
       this.displayPosts(30)
     }
   }
 
+  // REMOVE THIS ONCE CONNECTED TO ACTUAL DB
   shuffle(array) {
     var currentIndex = array.length,  randomIndex;
   

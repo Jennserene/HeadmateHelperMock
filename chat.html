@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Headmate Helper</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="header.js"></script>
   <script defer src="chat.js"></script>
 </head>
 <body>
@@ -19,10 +20,24 @@
       </div>
     </div>
     <div id="buttonArea">
-      <button id="switchButton" class="headerButton">Switch</button>
+      <button type="button" id="switchButton" class="headerButton" onclick="switchExpand()">Switch</button>
       <div id="newAlterButtons">
         <button id="saveButton" class="headerButton">Save</button><br>
         <button id="cancelButton" class="headerButton">Cancel</button>
+      </div>
+      <div id="switchMenu" class="switchClose">
+        <h3 id="switchMenuTitle">Who is front?</h3>
+        <form>
+          <input type="radio" id="dropDownRadio" name="switch" value="dropDown">
+          <br>
+          <input type="radio" id="newAlterRadio" name="switch" value="newAlter">
+          <label for="newAlterRadio">New Alter</label>
+          <br>
+          <input type="radio" id="blurryRadio" name="switch" value="blurry">
+          <label for="blurryRadio">Blurry/Unknown</label>
+          <br>
+          <button type="button">Ok</button>
+        </form>
       </div>
     </div>
   </header>
